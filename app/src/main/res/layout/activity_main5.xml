@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DuckyYellow"
+    tools:context=".MainActivity">
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:theme="@style/BaseTheme"
+        app:queryHint="Search Location"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="393dp"
+        android:layout_height="573dp"
+        android:background="#000E0D0D"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/search"
+        android:layout_centerHorizontal="true"
+        tools:listitem="@layout/card_holder" />
+
+    <Button
+        android:id="@+id/searchbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="659dp"
+        android:text="Search" />
+
+
+</RelativeLayout>
